@@ -1,13 +1,13 @@
 export const images = [
 	{
-		src: "/assets/trial image-4.jpg",
+		src: "/assets/trial image-4.png",
 		alt: "Beautiful Ceramic Collection",
 		topText: "PAZ TILES",
 		bottomText: "DESIGNING YOUR PATH!",
 	},
 	{
-		src: "/assets/imgae trial-7.jpeg",
+		src: "/assets/imgae trial-7 (1).png",
 		alt: "Timeless Ceramic Designs",
-		singleText: "Timeless to Contemporary", 
+		singleText: '"Timeless to Contemporary"', 
 	},
 ];

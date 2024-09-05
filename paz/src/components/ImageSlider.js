@@ -61,7 +61,7 @@ const ImageSlider = ({
 									<h2 className="text-golden-yellow text-5xl md:text-8xl font-bold">
 										{image.topText}
 									</h2>
-									<h3 className="text-white text-xl md:text-3xl font-semibold mt-4">
+									<h3 className="text-dark-green text-xl md:text-3xl font-semibold mt-4">
 										{image.bottomText}
 									</h3>
 								</>

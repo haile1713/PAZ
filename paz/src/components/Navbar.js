@@ -36,7 +36,7 @@ const Navbar = () => {
 				<div className="md:hidden flex items-center">
 					<button
 						onClick={() => setIsOpen(!isOpen)}
-						className="text-dark-green"
+						className="text-golden-yellow"
 					>
 						{isOpen ? (
 							<XMarkIcon className="h-8 w-8" />

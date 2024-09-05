@@ -18,9 +18,9 @@ const Sidebar = () => {
 					</div>
 				</li>
 				{/* text */}
-				<li className="group flex items-center justify-end p-2 bg-dark-green text-dark-green font-bold cursor-pointer rounded-l-full hover:bg-white-ish">
+				<li className="group flex items-center justify-end p-2 bg-dark-green text-dark-green font-bold cursor-pointer rounded-l-full  hover:bg-white-ish">
 					<span className="hidden group-hover:block mr-2">
-						@Pazceramics
+						@Pazterrazzo
 					</span>
 					<div className="w-10 h-10 bg-golden-yellow flex items-center justify-center rounded-full">
 						<img
