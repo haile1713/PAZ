@@ -52,7 +52,6 @@ const BottomSection = ({ currentIndex, onPrev, onNext }) => {
 							src={`/assets/${link.icon}`}
 							alt={link.icon}
 							className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10  grayscale opacity-60 hover:opacity-100 transition-opacity  "
-								
 						/>
 					</a>
 				))}

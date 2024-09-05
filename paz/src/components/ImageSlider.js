@@ -58,7 +58,7 @@ const ImageSlider = ({
 						>
 							{image.topText && image.bottomText ? (
 								<>
-									<h2 className="text-golden-yellow text-5xl md:text-8xl font-bold">
+									<h2 className="text-golden-yellow text-5xl md:text-6xl font-bold">
 										{image.topText}
 									</h2>
 									<h3 className="text-dark-green text-xl md:text-3xl font-semibold mt-4">

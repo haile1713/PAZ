@@ -18,17 +18,13 @@ const Navbar = () => {
 			className="p-4 border-b-0 absolute top-0 left-0 w-full z-50"
 			style={{ backgroundColor: "transparent" }}
 		>
-			<div className=" mx-auto flex items-center justify-between">
+			<div className="mx-auto flex items-center justify-between">
 				{/* Logo */}
 				<div className="flex items-center space-x-10">
-				<img
-						src="/assets/logo.png" 
-						alt="Logo"
-						className="h-12 w-12" 
-					/>
-					<span className="text-golden-yellow text-3xl font-bold">
+					<img src="/assets/logo.png" alt="Logo" className="h-14 w-14" />
+					<span className="text-golden-yellow text-5xl font-bold">
 						{" "}
-						PAZ MODERN TERRAZZO{" "}
+						PAZ TERRAZZO{" "}
 					</span>
 				</div>
 
@@ -54,35 +50,35 @@ const Navbar = () => {
 				>
 					<Link
 						to="/"
-						className="flex items-center text-golden-yellow  text-2xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
+						className="flex items-center text-golden-yellow  text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
 					>
 						<HomeIcon className="h-8 w-8 mr-3" />
 						Home
 					</Link>
 					<Link
 						to="/products"
-						className="flex items-center text-golden-yellow text-2xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
+						className="flex items-center text-golden-yellow text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
 					>
 						<ShoppingBagIcon className="h-8 w-8 mr-3" />
 						Products
 					</Link>
 					<Link
 						to="/gallery"
-						className="flex items-center text-golden-yellow text-2xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
+						className="flex items-center text-golden-yellow text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
 					>
 						<PhotoIcon className="h-8 w-8 mr-3" />
 						Gallery
 					</Link>
 					<Link
 						to="/contact"
-						className="flex items-center text-golden-yellow text-2xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
+						className="flex items-center text-golden-yellow text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
 					>
 						<PhoneIcon className="h-8 w-8 mr-3" />
 						Contact Us
 					</Link>
 					<Link
 						to="/about"
-						className="flex items-center text-golden-yellow text-2xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
+						className="flex items-center text-golden-yellow text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
 					>
 						<InformationCircleIcon className="h-8 w-8 mr-3" />
 						About Us
