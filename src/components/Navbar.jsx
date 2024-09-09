@@ -44,9 +44,8 @@ const Navbar = () => {
 
 				{/* Navigation Links */}
 				<div
-					className={`md:flex md:space-x-10 ${
-						isOpen ? "block" : "hidden"
-					} absolute md:relative top-full left-0 w-full md:w-auto bg-transparent md:bg-transparent md:shadow-none shadow-lg`}
+					className={`md:flex md:space-x-10 ${isOpen ? "block" : "hidden"
+						} absolute md:relative top-full left-0 w-full md:w-auto bg-transparent md:bg-transparent md:shadow-none shadow-lg`}
 				>
 					<Link
 						to="/"
