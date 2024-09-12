@@ -10,7 +10,7 @@ const Sidebar = () => {
 					<span className="hidden group-hover:block mr-2 transition-all duration-400">
 						+0123456789
 					</span>
-					<div className="w-10 h-10 bg-background flex items-center justify-center rounded-full">
+					<div className="w-10 h-10 bg-white flex items-center justify-center rounded-full">
 						<img
 							src="/assets/phone-svgrepo-com.svg"
 							alt="Call"
@@ -24,7 +24,7 @@ const Sidebar = () => {
 					<span className="hidden group-hover:block mr-2 transition-all duration-400">
 						@Pazterrazzo
 					</span>
-					<div className="w-10 h-10 bg-background flex items-center justify-center rounded-full">
+					<div className="w-10 h-10 bg-white flex items-center justify-center rounded-full">
 						<img
 							src="/assets/message-square-dots-svgrepo-com.svg"
 							alt="Message"

@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, SheetHeader } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
+import { ModeToggle } from "./Mode-toogle";
 import {
 	HomeIcon,
 	ShoppingBagIcon,
@@ -19,7 +20,8 @@ export default function Component() {
 		<header className="flex h-10 items-center justify-between bg-background px-4 sm:px-6 z-50  absolute top-0 left-0 w-full  ">
 			<Link to="/" className="flex items-center gap-2" >
 				<img src="/assets/logo.png" alt="Logo" className="h-10" />
-				<span className="text-lg font-semibold">PAZ TERRAZZO</span>
+				<span className="text-lg font-semibold text-foreground">PAZ TERRAZZO</span>
+				<ModeToggle className="flex items-center text-primary  z-50"></ModeToggle>
 			</Link>
 			<nav className="hidden gap-4 sm:flex">
 				<Link to="/" className={`flex text-sm font-bold ${isActive("/") ? "text-primary" : "text-muted-foreground"} hover:scale-110 hover:text-foreground font-black `}>
@@ -47,16 +49,17 @@ export default function Component() {
 			{/* when it shrink */}
 			<Sheet>
 				<SheetTrigger asChild>
-					<Button variant="outline" size="icon" className="sm:hidden">
+					<Button variant="outline" size="icon" className="sm:hidden text-foreground">
 						<MenuIcon className="h-6 w-6" />
 						<span className="sr-only">Toggle navigation menu</span>
 					</Button>
 				</SheetTrigger>
-				<SheetContent side="left">
+				<SheetContent side="left" className="bg-background text-foreground m-0">
 					<SheetHeader>
 						<SheetTitle className="flex gap-5 h-4 pb-10">
 							<img src="/assets/logo.png" alt="Logo" className="h-10" />
 							PAZ TERRAZZO
+							<ModeToggle className="flex items-center text-primary  z-50"></ModeToggle>
 						</SheetTitle>
 						<SheetDescription>
 						</SheetDescription>
