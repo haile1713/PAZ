@@ -68,35 +68,35 @@ export default function Component() {
 						<nav className="grid gap-2">
 							<Link
 								to="/"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted text-accent"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted hover:text-primary text-accent"
 							>
 								<HomeIcon className="h-5 mr-3" />
 								Home
 							</Link>
 							<Link
 								to="/products"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted text-accent"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted  hover:text-primary text-accent"
 							>
 								<ShoppingBagIcon className="h-5 mr-3" />
 								Products
 							</Link>
 							<Link
 								to="/gallery"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted text-accent"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted  hover:text-primary text-accent"
 							>
 								<PhotoIcon className="h-5 mr-3" />
 								Gallery
 							</Link>
 							<Link
 								to="/contact"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted text-accent"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted  hover:text-primary text-accent"
 							>
 								<PhoneIcon className="h-5 mr-3" />
 								Contact
 							</Link>
 							<Link
 								to="/about"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted text-accent"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted  hover:text-primary text-accent"
 							>
 								<InformationCircleIcon className="h-5 mr-3" />
 								About
