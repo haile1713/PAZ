@@ -7,7 +7,7 @@ export const images = [
 	},
 	{
 		src: "/assets/imgae trial-7 (1).png",
-		alt: "Timeless Ceramic Designs",
+		alt: "Timeless Terrazzo Designs",
 		singleText: '"Timeless to Contemporary"',
 	},
 ];

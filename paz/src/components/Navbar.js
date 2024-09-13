@@ -24,7 +24,7 @@ const Navbar = () => {
 					<img src="/assets/logo.png" alt="Logo" className="h-14 w-14" />
 					<span className="text-golden-yellow text-5xl font-bold">
 						{" "}
-						PAZ TERRAZZO{" "}
+						PAZ Terrazzo{" "}
 					</span>
 				</div>
 
@@ -70,18 +70,18 @@ const Navbar = () => {
 						Gallery
 					</Link>
 					<Link
-						to="/contact"
-						className="flex items-center text-golden-yellow text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
-					>
-						<PhoneIcon className="h-8 w-8 mr-3" />
-						Contact Us
-					</Link>
-					<Link
 						to="/about"
 						className="flex items-center text-golden-yellow text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
 					>
 						<InformationCircleIcon className="h-8 w-8 mr-3" />
 						About Us
+					</Link>
+					<Link
+						to="/contact"
+						className="flex items-center text-golden-yellow text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
+					>	
+						<PhoneIcon className="h-8 w-8 mr-3" />
+						Contact Us
 					</Link>
 				</div>
 			</div>
