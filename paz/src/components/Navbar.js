@@ -79,7 +79,7 @@ const Navbar = () => {
 					<Link
 						to="/contact"
 						className="flex items-center text-golden-yellow text-xl font-bold hover:text-white-ish hover:scale-90 transition-transform duration-300 p-2"
-					>	
+					>
 						<PhoneIcon className="h-8 w-8 mr-3" />
 						Contact Us
 					</Link>

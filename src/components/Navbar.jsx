@@ -1,8 +1,14 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, SheetHeader } from "@/components/ui/sheet";
+import {
+	Sheet,
+	SheetTrigger,
+	SheetContent,
+	SheetTitle,
+	SheetDescription,
+	SheetHeader,
+} from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "./Mode-toogle";
 import {
 	HomeIcon,
 	ShoppingBagIcon,
@@ -20,67 +26,119 @@ export default function Component() {
 		<header className="flex h-20 items-center justify-between bg-transparent px-8 sm:px-10 z-50 absolute top-0 left-0 w-full">
 			<Link to="/" className="flex items-center gap-4">
 				<img src="/assets/logo.png" alt="Logo" className="h-16 w-16" />
-				<span className="text-5xl font-bold text-golden-yellow">PAZ TERRAZZO</span>
-				{/* <ModeToggle className="flex items-center text-primary z-50"></ModeToggle> */}
+				<span className="text-5xl font-bold text-golden-yellow">
+					PAZ TERRAZZO
+				</span>
 			</Link>
 			<nav className="hidden gap-8 sm:flex">
-				<Link to="/" className={`flex text-2xl font-bold ${isActive("/") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish  transition-transform`}>
+				<Link
+					to="/"
+					className={`flex text-2xl font-bold ${
+						isActive("/") ? "text-dark-green" : "text-golden-yellow"
+					} hover:scale-90 hover:text-white-ish transition-transform`}
+				>
 					<HomeIcon className="h-8 w-8 mr-2" />
 					Home
 				</Link>
-				<Link to="/products" className={`flex text-2xl font-bold ${isActive("/products") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish transition-transform`}>
+				<Link
+					to="/products"
+					className={`flex text-2xl font-bold ${
+						isActive("/products")
+							? "text-dark-green"
+							: "text-golden-yellow"
+					} hover:scale-90 hover:text-white-ish transition-transform`}
+				>
 					<ShoppingBagIcon className="h-8 w-8 mr-2" />
 					Products
 				</Link>
-				<Link to="/gallery" className={`flex text-2xl font-bold ${isActive("/gallery") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish  transition-transform`}>
+				<Link
+					to="/gallery"
+					className={`flex text-2xl font-bold ${
+						isActive("/gallery")
+							? "text-dark-green"
+							: "text-golden-yellow"
+					} hover:scale-90 hover:text-white-ish transition-transform`}
+				>
 					<PhotoIcon className="h-8 w-8 mr-2" />
 					Gallery
 				</Link>
-				<Link to="/contact" className={`flex text-2xl font-bold ${isActive("/contact") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish  transition-transform`}>
+				<Link
+					to="/contact"
+					className={`flex text-2xl font-bold ${
+						isActive("/contact")
+							? "text-dark-green"
+							: "text-golden-yellow"
+					} hover:scale-90 hover:text-white-ish transition-transform`}
+				>
 					<PhoneIcon className="h-8 w-8 mr-2" />
 					Contact
 				</Link>
-				<Link to="/about" className={`flex text-2xl font-bold ${isActive("/about") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish  transition-transform`}>
+				<Link
+					to="/about"
+					className={`flex text-2xl font-bold ${
+						isActive("/about") ? "text-dark-green" : "text-golden-yellow"
+					} hover:scale-90 hover:text-white-ish transition-transform`}
+				>
 					<InformationCircleIcon className="h-8 w-8 mr-2" />
 					About
 				</Link>
 			</nav>
 			<Sheet>
 				<SheetTrigger asChild>
-					<Button variant="outline" size="icon" className="sm:hidden text-foreground">
+					<Button
+						variant="outline"
+						size="icon"
+						className="sm:hidden text-foreground"
+					>
 						<MenuIcon className="h-6 w-6" />
 						<span className="sr-only">Toggle navigation menu</span>
 					</Button>
 				</SheetTrigger>
-				<SheetContent side="left" className="bg-transparent/40 text-foreground m-0">
+				<SheetContent
+					side="left"
+					className="bg-dark-green/60 text-foreground m-0"
+				>
 					<SheetHeader>
-						<SheetTitle className="flex gap-5 h-4 pb-10 text-golden-yellow">
+						{/* <SheetTitle className="flex gap-5 h-4 pb-10 text-golden-yellow">
 							<img src="/assets/logo.png" alt="Logo" className="h-10" />
 							PAZ TERRAZZO
-							{/* <ModeToggle className="flex items-center text-primary z-50"></ModeToggle> */}
-						</SheetTitle>
-						<SheetDescription>
-						</SheetDescription>
+						</SheetTitle> */}
+						<SheetDescription />
 					</SheetHeader>
 					<div className="grid gap-4 p-4">
 						<nav className="grid gap-2">
-							<Link to="/" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium  hover:bg-dark-green/70 hover:text-primary text-accent">
+							<Link
+								to="/"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent"
+							>
 								<HomeIcon className="h-8 w-8 mr-2" />
 								Home
 							</Link>
-							<Link to="/products" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent">
+							<Link
+								to="/products"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent"
+							>
 								<ShoppingBagIcon className="h-8 w-8 mr-2" />
 								Products
 							</Link>
-							<Link to="/gallery" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent">
+							<Link
+								to="/gallery"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent"
+							>
 								<PhotoIcon className="h-8 w-8 mr-2" />
 								Gallery
 							</Link>
-							<Link to="/contact" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent">
+							<Link
+								to="/contact"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent"
+							>
 								<PhoneIcon className="h-8 w-8 mr-2" />
 								Contact
 							</Link>
-							<Link to="/about" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent">
+							<Link
+								to="/about"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent"
+							>
 								<InformationCircleIcon className="h-8 w-8 mr-2" />
 								About
 							</Link>

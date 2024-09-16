@@ -2,8 +2,6 @@ import React from "react";
 import ImageSlider from "./ImageSlider";
 import Sidebar from "./Sidebar";
 
-
-
 const homepageStyle = {
 	backgroundSize: "cover",
 	backgroundPosition: "center",

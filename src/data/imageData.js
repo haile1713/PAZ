@@ -10,6 +10,5 @@ export const images = [
 		alt: "Timeless Ceramic Designs",
 		topText: "Timeless to Contemporary",
 		bottomText: '"Paving your PAZ"',
-
 	},
 ];
