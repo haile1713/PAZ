@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    // <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Router>
         <div className="App">
           <Navbar />
@@ -25,7 +25,7 @@ function App() {
           </Routes>
         </div>
       </Router>
-    </ThemeProvider>
+    // {/* </ThemeProvider> */}
   );
 }
 

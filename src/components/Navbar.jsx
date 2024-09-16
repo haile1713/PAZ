@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, SheetHeader } from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button"
+import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, SheetHeader } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./Mode-toogle";
 import {
 	HomeIcon,
@@ -17,36 +17,34 @@ export default function Component() {
 	const isActive = (path) => location.pathname === path;
 
 	return (
-		<header className="flex h-10 items-center justify-between bg-background px-4 sm:px-6 z-50  absolute top-0 left-0 w-full  ">
-			<Link to="/" className="flex items-center gap-2" >
-				<img src="/assets/logo.png" alt="Logo" className="h-10" />
-				<span className="text-lg font-semibold text-foreground">PAZ TERRAZZO</span>
-				<ModeToggle className="flex items-center text-primary  z-50"></ModeToggle>
+		<header className="flex h-20 items-center justify-between bg-transparent px-8 sm:px-10 z-50 absolute top-0 left-0 w-full">
+			<Link to="/" className="flex items-center gap-4">
+				<img src="/assets/logo.png" alt="Logo" className="h-16 w-16" />
+				<span className="text-5xl font-bold text-golden-yellow">PAZ TERRAZZO</span>
+				{/* <ModeToggle className="flex items-center text-primary z-50"></ModeToggle> */}
 			</Link>
-			<nav className="hidden gap-4 sm:flex">
-				<Link to="/" className={`flex text-sm font-bold ${isActive("/") ? "text-primary" : "text-muted-foreground"} hover:scale-110 hover:text-foreground font-black `}>
-					<HomeIcon className="h-5 mr-3" />
+			<nav className="hidden gap-8 sm:flex">
+				<Link to="/" className={`flex text-2xl font-bold ${isActive("/") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish  transition-transform`}>
+					<HomeIcon className="h-8 w-8 mr-2" />
 					Home
 				</Link>
-				<Link to="/products" className={`flex text-sm font-bold ${isActive("/products") ? "text-primary" : "text-muted-foreground"} hover:scale-110 hover:text-foreground font-black`}>
-					<ShoppingBagIcon className="h-5 mr-3" />
+				<Link to="/products" className={`flex text-2xl font-bold ${isActive("/products") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish transition-transform`}>
+					<ShoppingBagIcon className="h-8 w-8 mr-2" />
 					Products
 				</Link>
-				<Link to="/gallery" className={`flex text-sm font-bold ${isActive("/gallery") ? "text-primary" : "text-muted-foreground"} hover:scale-110 hover:text-foreground font-black`}>
-					<PhotoIcon className="h-5 mr-3" />
+				<Link to="/gallery" className={`flex text-2xl font-bold ${isActive("/gallery") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish  transition-transform`}>
+					<PhotoIcon className="h-8 w-8 mr-2" />
 					Gallery
 				</Link>
-				<Link to="/contact" className={`flex text-sm font-bold ${isActive("/contact") ? "text-primary" : "text-muted-foreground"} hover:scale-110 hover:text-foreground font-black`}>
-					<PhoneIcon className="h-5 mr-3" />
+				<Link to="/contact" className={`flex text-2xl font-bold ${isActive("/contact") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish  transition-transform`}>
+					<PhoneIcon className="h-8 w-8 mr-2" />
 					Contact
 				</Link>
-				<Link to="/about" className={`flex text-sm font-bold ${isActive("/about") ? "text-primary" : "text-muted-foreground"} hover:scale-110 hover:text-foreground font-black`}>
-					<InformationCircleIcon className="h-5 mr-3" />
+				<Link to="/about" className={`flex text-2xl font-bold ${isActive("/about") ? "text-golden-yellow" : "text-muted-foreground"} hover:scale-90 hover:text-white-ish  transition-transform`}>
+					<InformationCircleIcon className="h-8 w-8 mr-2" />
 					About
 				</Link>
-
 			</nav>
-			{/* when it shrink */}
 			<Sheet>
 				<SheetTrigger asChild>
 					<Button variant="outline" size="icon" className="sm:hidden text-foreground">
@@ -54,51 +52,36 @@ export default function Component() {
 						<span className="sr-only">Toggle navigation menu</span>
 					</Button>
 				</SheetTrigger>
-				<SheetContent side="left" className="bg-background text-foreground m-0">
+				<SheetContent side="left" className="bg-transparent/40 text-foreground m-0">
 					<SheetHeader>
-						<SheetTitle className="flex gap-5 h-4 pb-10">
+						<SheetTitle className="flex gap-5 h-4 pb-10 text-golden-yellow">
 							<img src="/assets/logo.png" alt="Logo" className="h-10" />
 							PAZ TERRAZZO
-							<ModeToggle className="flex items-center text-primary  z-50"></ModeToggle>
+							{/* <ModeToggle className="flex items-center text-primary z-50"></ModeToggle> */}
 						</SheetTitle>
 						<SheetDescription>
 						</SheetDescription>
 					</SheetHeader>
 					<div className="grid gap-4 p-4">
 						<nav className="grid gap-2">
-							<Link
-								to="/"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted hover:text-primary text-accent"
-							>
-								<HomeIcon className="h-5 mr-3" />
+							<Link to="/" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium  hover:bg-dark-green/70 hover:text-primary text-accent">
+								<HomeIcon className="h-8 w-8 mr-2" />
 								Home
 							</Link>
-							<Link
-								to="/products"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted  hover:text-primary text-accent"
-							>
-								<ShoppingBagIcon className="h-5 mr-3" />
+							<Link to="/products" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent">
+								<ShoppingBagIcon className="h-8 w-8 mr-2" />
 								Products
 							</Link>
-							<Link
-								to="/gallery"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted  hover:text-primary text-accent"
-							>
-								<PhotoIcon className="h-5 mr-3" />
+							<Link to="/gallery" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent">
+								<PhotoIcon className="h-8 w-8 mr-2" />
 								Gallery
 							</Link>
-							<Link
-								to="/contact"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted  hover:text-primary text-accent"
-							>
-								<PhoneIcon className="h-5 mr-3" />
+							<Link to="/contact" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent">
+								<PhoneIcon className="h-8 w-8 mr-2" />
 								Contact
 							</Link>
-							<Link
-								to="/about"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-sm font-medium hover:bg-muted  hover:text-primary text-accent"
-							>
-								<InformationCircleIcon className="h-5 mr-3" />
+							<Link to="/about" className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent">
+								<InformationCircleIcon className="h-8 w-8 mr-2" />
 								About
 							</Link>
 						</nav>
@@ -106,7 +89,7 @@ export default function Component() {
 				</SheetContent>
 			</Sheet>
 		</header>
-	)
+	);
 }
 
 function MenuIcon(props) {
@@ -127,6 +110,5 @@ function MenuIcon(props) {
 			<line x1="4" x2="20" y1="6" y2="6" />
 			<line x1="4" x2="20" y1="18" y2="18" />
 		</svg>
-	)
+	);
 }
-
