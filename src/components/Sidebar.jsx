@@ -8,7 +8,7 @@ const Sidebar = () => {
 				<li className=" flex items-center justify-end p-2 bg-dark-green text-foreground font-bold cursor-pointer rounded-l-full hover:bg-primary">
 					{/* This span will only show on hover */}
 					<span className="hidden group-hover:block mr-2 transition-all duration-400">
-						+0123456789
+						+251955991242
 					</span>
 					<div className="w-10 h-10 bg-golden-yellow  flex items-center justify-center rounded-full">
 						<img
@@ -22,7 +22,7 @@ const Sidebar = () => {
 				<li className=" flex items-center justify-end p-2 bg-dark-green  text-foreground font-bold cursor-pointer rounded-l-full hover:bg-primary">
 					{/* This span will only show on hover */}
 					<span className="hidden group-hover:block mr-2 transition-all duration-400">
-						@Pazterrazzo
+						pazengineering1@gmail.com
 					</span>
 					<div className="w-10 h-10 bg-golden-yellow  flex items-center justify-center rounded-full">
 						<img
