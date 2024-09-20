@@ -27,7 +27,7 @@ export default function Component() {
 			<Link to="/" className="flex items-center gap-4">
 				<img src="/assets/logo.png" alt="Logo" className="h-16 w-16" />
 				<span className="text-5xl font-bold text-golden-yellow">
-					PAZ TERRAZZO
+					PAZ TILES
 				</span>
 			</Link>
 			<nav className="hidden gap-8 sm:flex">
@@ -39,6 +39,15 @@ export default function Component() {
 				>
 					<HomeIcon className="h-8 w-8 mr-2" />
 					Home
+				</Link>
+				<Link
+					to="/about"
+					className={`flex text-2xl font-bold ${
+						isActive("/about") ? "text-dark-green" : "text-golden-yellow"
+					} hover:scale-90 hover:text-white-ish transition-transform`}
+				>
+					<InformationCircleIcon className="h-8 w-8 mr-2" />
+					About Us
 				</Link>
 				<Link
 					to="/products"
@@ -73,15 +82,6 @@ export default function Component() {
 					<PhoneIcon className="h-8 w-8 mr-2" />
 					Contact
 				</Link>
-				<Link
-					to="/about"
-					className={`flex text-2xl font-bold ${
-						isActive("/about") ? "text-dark-green" : "text-golden-yellow"
-					} hover:scale-90 hover:text-white-ish transition-transform`}
-				>
-					<InformationCircleIcon className="h-8 w-8 mr-2" />
-					About
-				</Link>
 			</nav>
 			<Sheet>
 				<SheetTrigger asChild>
@@ -115,6 +115,13 @@ export default function Component() {
 								Home
 							</Link>
 							<Link
+								to="/about"
+								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent"
+							>
+								<InformationCircleIcon className="h-8 w-8 mr-2" />
+								About Us
+							</Link>
+							<Link
 								to="/products"
 								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent"
 							>
@@ -134,13 +141,6 @@ export default function Component() {
 							>
 								<PhoneIcon className="h-8 w-8 mr-2" />
 								Contact
-							</Link>
-							<Link
-								to="/about"
-								className="flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-xl font-medium hover:bg-dark-green/70 hover:text-primary text-accent"
-							>
-								<InformationCircleIcon className="h-8 w-8 mr-2" />
-								About
 							</Link>
 						</nav>
 					</div>
