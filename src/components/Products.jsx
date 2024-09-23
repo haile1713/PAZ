@@ -1,6 +1,10 @@
 import React from "react";
 
 const Product = () => {
-	return <div>Products page </div>;
+	return (
+		<>
+			<section>Hello world</section>
+		</>
+	)
 };
 export default Product;
