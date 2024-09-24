@@ -1,5 +1,3 @@
-import React from "react";
-
 const Sidebar = () => {
 	return (
 		<div className="fixed top-1/10 right-0 z-50">
