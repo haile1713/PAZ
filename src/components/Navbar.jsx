@@ -26,7 +26,7 @@ export default function Component() {
 			<Link to="/" className="flex items-center gap-4">
 				<img src="/assets/logo.png" alt="Logo" className="h-16 w-16" />
 				<span className="text-5xl font-bold text-golden-yellow">
-					PAZ TERAZZO
+					PAZ TILES
 				</span>
 			</Link>
 			<nav className="hidden gap-8 sm:flex">
