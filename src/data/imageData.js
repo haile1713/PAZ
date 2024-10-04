@@ -1,12 +1,12 @@
 export const images = [
 	{
 		src: "/assets/trial image-4.png",
-		topText: "PAZ MODERN TERRAZZO",
-		bottomText: '"DESIGNING YOUR PATH!"',
+		topText: "MODERN GRANITE AND TERRAZZO",
+		bottomText: '"PAVING YOUR PATH"',
 	},
 	{
-		src: "/assets/imgae trial-7 (1).png",
+		src: "/assets/devine.jpg.webp",
 		topText: "TIMELESS TO CONTEMPORARY",
-		bottomText: '"PAVING YOUR PAZ"',
+		bottomText: '"REVOLUTIONARIZING ETHIOPIAN TILES AND TERRAZZO INDUSTRY"',
 	},
 ];
