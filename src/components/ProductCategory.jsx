@@ -40,7 +40,7 @@ const Category = ({ data, setFilter }) => {
 							if (!filterdItem) return null
 							return (
 								<div key={filterdItem.id} className="flex items-center space-x-2">
-									<RadioGroupItem id={filterdItem.title} value={filterdItem.color} style={{ color: filterdItem.hex }}>
+									<RadioGroupItem id={filterdItem.title} value={filterdItem.color} style={{ color: filterdItem.hex }} className="text-black">
 										<span className="sr-only">{filterdItem.color}</span> {/* For accessibility */}
 									</RadioGroupItem>
 									<Badge className="w-fit" style={{ backgroundColor: filterdItem.hex, color: filterdItem.hexBack }}>{filterdItem.color}</Badge>
