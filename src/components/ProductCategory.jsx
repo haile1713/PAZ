@@ -6,14 +6,14 @@ import {
 } from "@/components/ui/toggle-group"
 
 const Category = ({ data, setFilter }) => {
-	const [selectedColor, setSelectedColor] = useState(["any"]);
+	const [selectedColor, setSelectedColor] = useState([]);
 	const [colorSet, setColorSet] = useState(() => new Set([]))
 
 	const pipe = (...fns) => (initialValue) => {
 		return fns.reduce((acc, fn) => fn(acc), initialValue);
 	};
 	const filterColors = (colors) => (data) =>
-		data.filter((item) => colors.includes(item.color) || (colors.includes("any") && colors.length == 1));
+		data.filter((item) => colors.includes(item.color) || colors.length == 0);
 
 	useEffect(() => {
 		const combinedFilter = pipe(
@@ -33,11 +33,6 @@ const Category = ({ data, setFilter }) => {
 			<div className="color-category mt-5">
 				<h1 className="mb-3 text-2xl text-black font-bold bg-white text-center bg-opacity-50">Colors</h1>
 				<ToggleGroup type="multiple" defaultValue={selectedColor} onValueChange={x => setSelectedColor(x)} className="flex flex-col items-start">
-					<div className="flex space-x-2">
-						<ToggleGroupItem value="any" aria-label="any">
-							<Badge className="w-fit">Any</Badge>
-						</ToggleGroupItem>
-					</div>
 					{
 						Array.from(colorSet).map(color => {
 							const filterdItem = data.find(item => item.color == color)
