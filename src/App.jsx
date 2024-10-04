@@ -5,7 +5,7 @@ import Products from "./components/ProductsPage";
 import { ThemeProvider } from "@/components/theme-provider";
 // import Gallery from './components/Gallery';
 // import Contact from './components/Contact';
-// import About from './components/About';
+import AboutUs from './components/AboutUs';
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Homepage />} />
 					<Route path="/products" element={<Products />} />
+					<Route path="/about" element={<AboutUs />}/>
 					{/*
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
