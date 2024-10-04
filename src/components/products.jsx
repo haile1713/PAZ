@@ -11,8 +11,8 @@ import { Badge } from "@/components/ui/badge"
 const Product = ({ data }) => {
 	return (
 		data.map(item => (
-			<Card className="mt-20" key={item.id}>
-				<CardHeader>
+			<Card className="mt-20 bg-opacity-30 bg-black" key={item.id}>
+				<CardHeader className="text-primary">
 					<CardTitle>{item.title}</CardTitle>
 				</CardHeader>
 				<CardContent>

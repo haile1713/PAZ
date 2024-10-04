@@ -2,13 +2,14 @@ import Product from "./products";
 import Category from "./ProductCategory";
 import data from "@/src/data/productData";
 import { useState } from "react";
+import "../product.css"
 const Products = () => {
 	const [products, setProducts] = useState(data)
 	const setFilter = filter => {
 		setProducts(filter(data))
 	}
 	return (
-		<div className="flex flex-col">
+		<div className="flex flex-col" id="products" >
 			<h1 className="text-3xl font-bold text-center mt-20">Products</h1>
 			<div className="flex flex-row mt-10 gap-10">
 				<div className="w-1/6 ml-4"> {/* Adjust the width as needed */}
