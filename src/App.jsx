@@ -10,9 +10,11 @@ import Navbar from "./components/Navbar";
 
 function App() {
 	return (
+		// <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
 		<Router>
 			<div className="App">
 				<Navbar />
+
 				<Routes>
 					<Route path="/" element={<Homepage />} />
 					<Route path="/products" element={<Products />} />
@@ -24,6 +26,7 @@ function App() {
 				</Routes>
 			</div>
 		</Router>
+		// {/* </ThemeProvider> */}
 	);
 }
 
