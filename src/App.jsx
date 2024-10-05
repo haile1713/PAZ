@@ -1,12 +1,12 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
-import Products from "./components/products"; // Example components for routing
-
+import Products from "./components/Products"; // Example components for routing
  import Gallery from './components/Gallery';
 // import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
 import Navbar from "./components/Navbar";
+import Contact from "./components/Contact"; 
 
 function App() {
 	return (
@@ -19,6 +19,7 @@ function App() {
 					<Route path="/" element={<Homepage />} />
 					<Route path="/products" element={<Products />} />
 					<Route path="/about" element={<AboutUs />}/>
+					<Route path="/contact" element={<Contact />} />
 				
           <Route path="/gallery" element={<Gallery />} />
      	{/*     <Route path="/contact" element={<Contact />} />
