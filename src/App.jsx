@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 // import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
 import Navbar from "./components/Navbar";
+import Contact from "./components/Contact"; 
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 					<Route path="/" element={<Homepage />} />
 					<Route path="/products" element={<Products />} />
 					<Route path="/about" element={<AboutUs />}/>
+					<Route path="/contact" element={<Contact />} />
 					{/*
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
