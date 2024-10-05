@@ -76,15 +76,7 @@ export default function Component() {
 					<PhoneIcon className="h-8 w-8 mr-2" />
 					Contact
 				</Link>
-				<Link
-					to="/about"
-					className={`flex text-2xl font-bold ${isActive("/about") ? "text-dark-green" : "text-golden-yellow"
-						} hover:scale-90 hover:text-white-ish transition-transform`}
-				>
-					<InformationCircleIcon className="h-8 w-8 mr-2" />
-					About
-				</Link>
-			</nav>
+			</nav >
 			<Sheet>
 				<SheetTrigger asChild>
 					<Button
@@ -148,7 +140,7 @@ export default function Component() {
 					</div>
 				</SheetContent>
 			</Sheet>
-		</header>
+		</header >
 	);
 }
 
