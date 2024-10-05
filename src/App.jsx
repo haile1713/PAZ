@@ -1,8 +1,8 @@
-import React from "react";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Products from "./components/Products"; // Example components for routing
-import { ThemeProvider } from "@/components/theme-provider";
+
  import Gallery from './components/Gallery';
 // import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
