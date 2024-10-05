@@ -32,56 +32,51 @@ export default function Component() {
 			<nav className="hidden gap-8 sm:flex">
 				<Link
 					to="/"
-					className={`flex text-2xl font-bold ${
-						isActive("/") ? "text-dark-green" : "text-golden-yellow"
-					} hover:scale-90 hover:text-white-ish transition-transform`}
+					className={`flex text-2xl font-bold ${isActive("/") ? "text-dark-green" : "text-golden-yellow"
+						} hover:scale-90 hover:text-white-ish transition-transform`}
 				>
 					<HomeIcon className="h-8 w-8 mr-2" />
 					Home
 				</Link>
 				<Link
 					to="/about"
-					className={`flex text-2xl font-bold ${
-						isActive("/about") ? "text-dark-green" : "text-golden-yellow"
-					} hover:scale-90 hover:text-white-ish transition-transform`}
+					className={`flex text-2xl font-bold ${isActive("/about") ? "text-dark-green" : "text-golden-yellow"
+						} hover:scale-90 hover:text-white-ish transition-transform`}
 				>
 					<InformationCircleIcon className="h-8 w-8 mr-2" />
 					About Us
 				</Link>
 				<Link
 					to="/products"
-					className={`flex text-2xl font-bold ${
-						isActive("/products")
-							? "text-dark-green"
-							: "text-golden-yellow"
-					} hover:scale-90 hover:text-white-ish transition-transform`}
+					className={`flex text-2xl font-bold ${isActive("/products")
+						? "text-dark-green"
+						: "text-golden-yellow"
+						} hover:scale-90 hover:text-white-ish transition-transform`}
 				>
 					<ShoppingBagIcon className="h-8 w-8 mr-2" />
 					Products
 				</Link>
 				<Link
 					to="/gallery"
-					className={`flex text-2xl font-bold ${
-						isActive("/gallery")
-							? "text-dark-green"
-							: "text-golden-yellow"
-					} hover:scale-90 hover:text-white-ish transition-transform`}
+					className={`flex text-2xl font-bold ${isActive("/gallery")
+						? "text-dark-green"
+						: "text-golden-yellow"
+						} hover:scale-90 hover:text-white-ish transition-transform`}
 				>
 					<PhotoIcon className="h-8 w-8 mr-2" />
 					Gallery
 				</Link>
 				<Link
 					to="/contact"
-					className={`flex text-2xl font-bold ${
-						isActive("/contact")
-							? "text-dark-green"
-							: "text-golden-yellow"
-					} hover:scale-90 hover:text-white-ish transition-transform`}
+					className={`flex text-2xl font-bold ${isActive("/contact")
+						? "text-dark-green"
+						: "text-golden-yellow"
+						} hover:scale-90 hover:text-white-ish transition-transform`}
 				>
 					<PhoneIcon className="h-8 w-8 mr-2" />
 					Contact
 				</Link>
-			</nav>
+			</nav >
 			<Sheet>
 				<SheetTrigger asChild>
 					<Button
@@ -145,7 +140,7 @@ export default function Component() {
 					</div>
 				</SheetContent>
 			</Sheet>
-		</header>
+		</header >
 	);
 }
 
