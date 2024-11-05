@@ -48,7 +48,7 @@ PAZ Tiles is a responsive and feature-rich website designed to display tile prod
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/paz-tiles.git
+   git clone https://github.com/haile1713/PAZ.git
    cd paz-tiles
    ```
 
